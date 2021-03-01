@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UTT_dbDataSet2" targetNamespace="http://tempuri.org/UTT_dbDataSet2.xsd" xmlns:mstns="http://tempuri.org/UTT_dbDataSet2.xsd" xmlns="http://tempuri.org/UTT_dbDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="UTT_dbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="UTT_dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AIS.Properties.Settings.GlobalReference.Default.UTT_dbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vehiclesTableAdapter" GeneratorDataComponentClassName="vehiclesTableAdapter" Name="vehicles" UserDataComponentName="vehiclesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="UTT_dbConnectionString (Settings)" DbObjectName="UTT_db.dbo.vehicles" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT vehicle_marka FROM dbo.vehicles</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="vehicle_marka" DataSetColumn="vehicle_marka" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UTT_dbDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="UTT_dbDataSet2" msprop:Generator_UserDSName="UTT_dbDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vehicles" msprop:Generator_TableClassName="vehiclesDataTable" msprop:Generator_TableVarName="tablevehicles" msprop:Generator_TablePropName="vehicles" msprop:Generator_RowDeletingName="vehiclesRowDeleting" msprop:Generator_RowChangingName="vehiclesRowChanging" msprop:Generator_RowEvHandlerName="vehiclesRowChangeEventHandler" msprop:Generator_RowDeletedName="vehiclesRowDeleted" msprop:Generator_UserTableName="vehicles" msprop:Generator_RowChangedName="vehiclesRowChanged" msprop:Generator_RowEvArgName="vehiclesRowChangeEvent" msprop:Generator_RowClassName="vehiclesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vehicle_marka" msprop:Generator_ColumnVarNameInTable="columnvehicle_marka" msprop:Generator_ColumnPropNameInRow="vehicle_marka" msprop:Generator_ColumnPropNameInTable="vehicle_markaColumn" msprop:Generator_UserColumnName="vehicle_marka" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
